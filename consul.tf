@@ -7,3 +7,7 @@ resource "hcp_consul_cluster" "consul_cluster" {
   hvn_id     = hcp_hvn.hvn.hvn_id
   tier       = "standard"
 }
+
+resource "hcp_consul_cluster_root_token" "consul_root_token" {
+  cluster_id = "demo-consul-cluster"
+}
