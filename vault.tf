@@ -11,4 +11,7 @@ resource "hcp_vault_cluster" "vault_cluster" {
 
 resource "hcp_vault_cluster_admin_token" "vault_root_token" {
   cluster_id = "demo-vault-cluster"
+  depends_on = [
+    hcp_vault_cluster.vault_cluster,
+  ]
 }
