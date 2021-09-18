@@ -8,3 +8,7 @@ resource "hcp_vault_cluster" "vault_cluster" {
   tier       = "standard_small"
   public_endpoint = true
 }
+
+resource "hcp_vault_cluster_admin_token" "vault_root_token" {
+  cluster_id = "demo-vault-cluster"
+}
