@@ -9,6 +9,6 @@ resource "hcp_consul_cluster" "consul_cluster" {
   public_endpoint = true
 }
 
-resource "hcp_consul_cluster_admin_token" "consul_root_token" {
+resource "hcp_consul_cluster_root_token" "consul_root_token" {
   cluster_id = "demo-consul-cluster"
 }
