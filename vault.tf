@@ -17,8 +17,10 @@ resource "hcp_vault_cluster_admin_token" "vault_root_token" {
 #########################################
 
 provider "vault" {
-  namespace = "admin"
+  address   = hcp_vault_cluster.vault_cluster.public_endpoint
   token     = hcp_vault_cluster_admin_token.vault_root_token.token
+  namespace = "admin"
+
 }
 
 resource "vault_policy" "admin" {
