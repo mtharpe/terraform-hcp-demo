@@ -8,7 +8,3 @@ resource "hcp_consul_cluster" "consul_cluster" {
   tier            = "standard"
   public_endpoint = true
 }
-
-resource "hcp_consul_cluster_root_token" "consul_root_token" {
-  cluster_id = "demo-consul-cluster"
-}
