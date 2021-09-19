@@ -2,7 +2,7 @@
 
 ## Requirements
 
-No requirements.
+Vault Server in HCP
 
 ## Providers
 
@@ -19,10 +19,8 @@ No modules.
 | Name | Type |
 |------|------|
 | [hcp_consul_cluster.consul_cluster](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/resources/consul_cluster) | resource |
-| [hcp_consul_cluster_root_token.consul_root_token](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/resources/consul_cluster_root_token) | resource |
 | [hcp_hvn.hvn](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/resources/hvn) | resource |
 | [hcp_vault_cluster.vault_cluster](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/resources/vault_cluster) | resource |
-| [hcp_vault_cluster_admin_token.vault_root_token](https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/resources/vault_cluster_admin_token) | resource |
 
 ## Inputs
 
@@ -34,4 +32,3 @@ No inputs.
 |------|-------------|
 | <a name="output_consul_public_address"></a> [consul\_public\_address](#output\_consul\_public\_address) | n/a |
 | <a name="output_vault_public_address"></a> [vault\_public\_address](#output\_vault\_public\_address) | n/a |
-| <a name="output_vault_root_token"></a> [vault\_root\_token](#output\_vault\_root\_token) | n/a |
