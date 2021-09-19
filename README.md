@@ -30,4 +30,8 @@ No inputs.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_consul_public_address"></a> [consul\_public\_address](#output\_consul\_public\_address) | n/a |
+| <a name="output_vault_public_address"></a> [vault\_public\_address](#output\_vault\_public\_address) | n/a |
+| <a name="output_vault_root_token"></a> [vault\_root\_token](#output\_vault\_root\_token) | n/a |
