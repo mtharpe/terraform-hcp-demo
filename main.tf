@@ -1,6 +1,7 @@
 #########################################
 # Specify the provider and access details
 #########################################
+provider "hcp" {}
 
 resource "hcp_hvn" "hvn" {
   hvn_id         = "demo-hvn"
