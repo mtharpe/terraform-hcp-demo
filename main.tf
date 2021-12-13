@@ -1,6 +1,15 @@
 #########################################
 # Specify the provider and access details
 #########################################
+terraform {
+  required_providers {
+    hcp = {
+      source = "hashicorp/hcp"
+      version = ">=0.20.0"
+    }
+  }
+}
+
 provider "hcp" {}
 
 resource "hcp_hvn" "hvn" {
